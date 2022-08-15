@@ -2,12 +2,14 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:58:44
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-15 23:25:44
+ * @LastEditTime: 2022-08-15 23:59:22
  * @Description:
  */
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
+import { presetUno, presetAttributify, presetIcons } from 'unocss';
+import Unocss from 'unocss/vite';
 // https://vitejs.dev/config/
 
 const rollupOptions = {
@@ -20,7 +22,14 @@ const rollupOptions = {
 };
 
 export default defineConfig({
-  plugins: [vue(), vueJsx()],
+  plugins: [
+    vue(),
+    vueJsx(),
+    // 添加UnoCSS插件
+    Unocss({
+      presets: [presetUno(), presetAttributify(), presetIcons()],
+    }),
+  ],
   // 添加库模式配置
   build: {
     rollupOptions,
