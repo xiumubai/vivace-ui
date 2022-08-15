@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:44:06
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-15 23:47:12
+ * @LastEditTime: 2022-08-15 23:51:26
  * @Description:
 -->
 
@@ -24,3 +24,5 @@ A Vue.js 3.0 UI Toolkit for Admin
 - [x] 在 `entry.js`中导出文件，实现`install`方法
 - [x] 配置打包输出文件格式`'esm', 'umd', 'iife'`
 - [x] demo 测试`esm`文件
+
+本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/mvp](https://github.com/xiumubai/vivace-admin/tree/feature/mvp)
