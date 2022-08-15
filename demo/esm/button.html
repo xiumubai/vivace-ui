@@ -1,0 +1,29 @@
+<!--
+ * @Author: 朽木白
+ * @Date: 2022-08-15 23:40:26
+ * @LastEditors: 1547702880@qq.com
+ * @LastEditTime: 2022-08-15 23:42:17
+ * @Description: 
+-->
+<h1>Demo</h1>
+<div id="app"></div>
+<script type="module">
+  import { createApp } from 'vue/dist/vue.esm-bundler.js';
+  import VivaceUI, {
+    SFCButton,
+    JSXButton,
+    VButton,
+  } from '../../dist/vivace-ui.esm.js';
+
+  createApp({
+    template: `
+<SButton/>
+<JSXButton/>
+<SFCButton/>
+`,
+  })
+    .component(SFCButton.name, SFCButton)
+    .component(JSXButton.name, JSXButton)
+    .component(VButton.name, VButton)
+    .mount('#app');
+</script>
