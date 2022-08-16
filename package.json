@@ -20,6 +20,11 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "prepare": "husky install"
   },
+  "config": {
+    "commitizne": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
   "exports": {
     ".": {
       "import": "./dist/vivace-ui.js",
@@ -28,7 +33,7 @@
   },
   "homepage": "https://vivace-admin.vercel.app/",
   "keywords": [],
-  "author": "",
+  "author": "xiumubai",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "17.0.2",
@@ -40,6 +45,7 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "2.0.2",
     "babel-eslint": "^10.1.0",
+    "cz-customizable": "^6.9.1",
     "eslint": "^8.22.0",
     "eslint-formatter-pretty": "^4.1.0",
     "eslint-plugin-json": "^3.1.0",
@@ -47,6 +53,7 @@
     "eslint-plugin-vue": "^9.2.0",
     "happy-dom": "6.0.4",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "terser": "^5.14.2",
     "typescript": "^4.7.4",
