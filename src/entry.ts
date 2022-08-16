@@ -5,10 +5,10 @@
  * @LastEditTime: 2022-08-16 14:35:47
  * @Description:
  */
-import { App } from 'vue';
-import VButton from './button';
+import { App } from "vue";
+import VButton from "./button";
 
-import 'uno.css';
+import "uno.css";
 // 导出单独组件
 export { VButton };
 

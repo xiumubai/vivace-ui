@@ -29,6 +29,12 @@
     "**/*": "prettier --write --ignore-unknown",
     "src/*": "eslint --ext .js,.ts,.tsx"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "vcm"
+    }
+  },
   "exports": {
     ".": {
       "import": "./dist/vivace-ui.js",
@@ -61,6 +67,7 @@
     "prettier": "^2.7.1",
     "terser": "^5.14.2",
     "typescript": "^4.7.4",
+    "vcm-cli": "^1.0.5",
     "vite": "^3.0.7",
     "vitepress": "0.22.4",
     "vitepress-theme-demoblock": "1.4.2",
