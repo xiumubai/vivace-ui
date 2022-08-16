@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:44:06
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-16 09:55:38
+ * @LastEditTime: 2022-08-16 10:00:30
  * @Description:
 -->
 
@@ -54,3 +54,9 @@ UnoCSS 是一个拥有高性能且具灵活性的即时原子化 CSS 引擎，�
 - [x] 引入 `@unocss/preset-icons` 预设实现字体图标按钮,需要安装`@iconify-json/ic`
 
 本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/unocss](https://github.com/xiumubai/vivace-admin/tree/feature/unocss)
+
+## 3.添加文档网站
+
+- [x] 利用 Vitepress 搭建生成文档网站
+- [x] 引用组件并展示到 Demo；
+- [x] 引用 Markdown 插件方便代码 Demo 示例编写。
