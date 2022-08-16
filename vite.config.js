@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:58:44
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-16 15:03:07
+ * @LastEditTime: 2022-08-16 21:19:21
  * @Description:
  */
 
@@ -37,7 +37,7 @@ export default defineConfig({
   // 添加库模式配置
   build: {
     rollupOptions,
-    cssCodeSplit: false,
+    cssCodeSplit: true,
     minify: 'terser', // boolean | 'terser' | 'esbuild'
     sourcemap: true, // 输出单独 source文件
     brotliSize: true, // 生成压缩大小报告
@@ -46,7 +46,7 @@ export default defineConfig({
       name: 'VivaceUI',
       fileName: 'vivace-ui',
       // 导出模块格式
-      formats: ['esm', 'umd', 'iife'],
+      // formats: ['es', 'umd', 'iife'],
     },
   },
 
