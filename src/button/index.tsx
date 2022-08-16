@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:53:00
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-16 09:14:38
+ * @LastEditTime: 2022-08-16 09:43:36
  * @Description:
  */
 import { defineComponent, PropType } from 'vue';
@@ -38,17 +38,19 @@ export const props = {
     type: Boolean,
     default: false,
   },
+  icon: {
+    type: String,
+    default: '',
+  },
 } as const;
 export default defineComponent({
   name: 'VButton',
   props,
   setup(props, { slots }) {
-    console.log(props.round);
-
     const size = {
       small: {
         x: '2',
-        y: '1',
+        y: '0.5',
         text: 'sm',
       },
       medium: {
@@ -81,6 +83,11 @@ export default defineComponent({
           mx-1
       `}
       >
+        {props.icon !== '' ? (
+          <i class={`i-ic-baseline-${props.icon} p-3`}></i>
+        ) : (
+          ''
+        )}
         {slots.default ? slots.default() : ''}
       </button>
     );

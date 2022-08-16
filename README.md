@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:44:06
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-15 23:57:15
+ * @LastEditTime: 2022-08-16 09:49:56
  * @Description:
 -->
 
@@ -49,6 +49,6 @@ UnoCSS 是一个拥有高性能且具灵活性的即时原子化 CSS 引擎，�
 
 **功能实现**
 
-- [x] 引入 UnoCSS 样式
-- [x] 实现组件属性定制按钮样式
-- [x] 实现【Icon 图标按钮】
+- [x] 引入 UnoCSS 实现原子化 CSS 样式
+- [x] 使用安全列表实现在 UnoCSS 中使用变量定制样式
+- [x] 引入 `@unocss/preset-icons` 预设实现字体图标按钮,需要安装`@iconify-json/ic`
