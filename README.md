@@ -1,6 +1,24 @@
-# vivace-admin
+<br>
+
+<p align="center">
+<img src="https://github.com/smarty-team/smarty-admin/blob/main/assets/logo.jpeg" style="width:200px;" />
+</p>
+
+<h1 align="center">Vivace-admin</h1>
+
+<p align="center">
 
 A Vue.js 3.0 UI Toolkit for Admin
+
+</p>
+
+<p align="center">
+    <a href="https://www.npmjs.com/package/smarty-admin-ui"><img src="https://img.shields.io/npm/v/smarty-admin-ui?color=c95f8b&amp;label=" alt="NPM version"></a>
+    <a href="https://github.com/smarty-team/smarty-admin/actions/workflows/main.yml"><img src="https://github.com/smarty-team/smarty-admin/actions/workflows/main.yml/badge.svg?branch=main" alt="CI" style="max-width: 100%;"></a>
+</p>
+
+<br>
+<br>
 
 # 版本迭代
 
@@ -103,3 +121,12 @@ Angular 团队 git 提交规范如下，本文严格按照这个规范提交代�
 - [x] 配置 Vite 输出多种格式模块；
 - [x] 配置 SourceMap 映射；
 - [x] 测试打包结果。
+
+本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/build](https://github.com/xiumubai/vivace-admin/tree/feature/build)
+
+## 7.持续集成 CI：基于 Github Action 的回归验证
+
+创建工作流 Workflow；
+创建 Job；
+运行 CI 服务；
+颁发 CI 徽章。
