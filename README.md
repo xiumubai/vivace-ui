@@ -56,3 +56,8 @@ UnoCSS 是一个拥有高性能且具灵活性的即时原子化 CSS 引擎，�
 本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/docs](https://github.com/xiumubai/vivace-admin/tree/feature/docs)
 
 ## 4.搭建 Vitest 单元测试环境
+
+- [x] 配置 Vitest 环境
+- [x] button 组件测试用例
+
+本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/vitest](https://github.com/xiumubai/vivace-admin/tree/feature/vitest)
