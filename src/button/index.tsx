@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:53:00
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-16 08:51:40
+ * @LastEditTime: 2022-08-16 09:14:38
  * @Description:
  */
 import { defineComponent, PropType } from 'vue';
@@ -34,11 +34,17 @@ export const props = {
     type: Boolean,
     default: false,
   },
+  plain: {
+    type: Boolean,
+    default: false,
+  },
 } as const;
 export default defineComponent({
   name: 'VButton',
   props,
   setup(props, { slots }) {
+    console.log(props.round);
+
     const size = {
       small: {
         x: '2',
@@ -48,7 +54,7 @@ export default defineComponent({
       medium: {
         x: '3',
         y: '1.5',
-        text: 'sm',
+        text: 'base',
       },
       large: {
         x: '4',
@@ -60,16 +66,19 @@ export default defineComponent({
       <button
         class={`
           py-${size[props.size].y} 
-          px-${size[props.size].x} 
+          px-${size[props.size].x}
+          ${props.round ? 'rounded-full' : 'rounded-lg'} 
           font-semibold 
-          rounded-lg
           shadow-md 
           text-white
           text-${size[props.size].text}
           bg-${props.color}-500 
           hover:bg-${props.color}-700 
-          border-none 
+          border-solid
+          border-${props.color}-${props.plain ? '500' : '500'}
           cursor-pointer 
+          transition duration-300 ease-in-out transform hover:scale-105
+          mx-1
       `}
       >
         {slots.default ? slots.default() : ''}
