@@ -25,6 +25,10 @@
       "path": "node_modules/cz-customizable"
     }
   },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "src/*": "eslint --ext .js,.ts,.tsx"
+  },
   "exports": {
     ".": {
       "import": "./dist/vivace-ui.js",
