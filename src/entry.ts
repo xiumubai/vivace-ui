@@ -5,10 +5,10 @@
  * @LastEditTime: 2022-08-15 23:16:46
  * @Description:
  */
-import { App } from 'vue';
-import VButton from './button';
-import SFCButton from './SFCButton.vue';
-import JSXButton from './JSXButton';
+import { App } from "vue";
+import VButton from "./button";
+import SFCButton from "./SFCButton.vue";
+import JSXButton from "./JSXButton";
 
 // 导出单独组件
 export { VButton, SFCButton, JSXButton };

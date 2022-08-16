@@ -61,3 +61,11 @@ UnoCSS 是一个拥有高性能且具灵活性的即时原子化 CSS 引擎，�
 - [x] button 组件测试用例
 
 本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/vitest](https://github.com/xiumubai/vivace-admin/tree/feature/vitest)
+
+## 5.集成 Eslint + Prettier + Husky 规范化
+
+- [x] 编码与项目结构规范；
+- [x] Eslint 代码检查工具；
+- [x] Prettier 代码格式化工具；
+- [x] Git commit 提交检查脚本；
+- [x] Husky + git hook 提交前校验。
