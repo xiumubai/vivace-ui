@@ -148,3 +148,9 @@ Angular 团队 git 提交规范如下，本文严格按照这个规范提交代�
 - 修订号：当你做了向下兼容的问题修正。
 
 本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/ci](https://github.com/xiumubai/vivace-admin/tree/feature/ci)
+
+## 9.使用 vercel 部署文档
+
+登陆[官方网站](https://vercel.com/)，把 vivace-admin 拉取到仓库中，配置参数，直接 deploy
+
+访问地址：[https://vivace-admin.vercel.app/](https://vivace-admin.vercel.app/)
