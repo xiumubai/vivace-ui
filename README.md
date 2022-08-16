@@ -88,3 +88,18 @@ Angular 团队 git 提交规范如下，本文严格按照这个规范提交代�
 - workflow：工作流相关文件修改。
 
 本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/lint](https://github.com/xiumubai/vivace-admin/tree/feature/lint)
+
+## 6.发布兼容多种 JS 模块标准的软件包
+
+常见的模块规范:
+
+- IFFE：使用立即执行函数实现模块化 例：`(function()) {}`；
+- CJS：基于 CommonJS 标准的模块化；
+- AMD：使用 Require 编写；
+- CMD：使用 SeaJS 编写；
+- ESM：ES 标准的模块化方案 ( ES6 标准提出 )；
+- UMD：兼容 CJS 与 AMD、IFFE 规范。
+
+- [x] 配置 Vite 输出多种格式模块；
+- [x] 配置 SourceMap 映射；
+- [x] 测试打包结果。
