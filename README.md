@@ -126,7 +126,23 @@ Angular 团队 git 提交规范如下，本文严格按照这个规范提交代�
 
 ## 7.持续集成 CI：基于 Github Action 的回归验证
 
-创建工作流 Workflow；
-创建 Job；
-运行 CI 服务；
-颁发 CI 徽章。
+- [x] 创建工作流 Workflow；
+- [x] 创建 Job；
+- [x] 运行 CI 服务；
+- [x] 颁发 CI 徽章。
+
+本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/ci](https://github.com/xiumubai/vivace-admin/tree/feature/ci)
+
+## 8.提交软件包到 npm 仓库
+
+- [x] 确定语义化版本；
+- [x] 设置持续交付过程 ;
+- [x] 引用自动发布徽章。
+
+语义化版本规定:
+
+版本格式：主版本号.次版本号.修订号（MAJOR.MINOR.PATCH）
+
+- 主版本号：当你做了不兼容的 API 修改；
+- 次版本号：当你做了向下兼容的功能性新增；
+- 修订号：当你做了向下兼容的问题修正。
