@@ -2,9 +2,11 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:58:44
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-16 00:21:39
+ * @LastEditTime: 2022-08-16 11:21:10
  * @Description:
  */
+
+/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
@@ -42,6 +44,18 @@ export default defineConfig({
       fileName: 'vivace-ui',
       // 导出模块格式
       formats: ['esm', 'umd', 'iife'],
+    },
+  },
+
+  test: {
+    // enable jest-like global test APIs
+    globals: true,
+    // simulate DOM with happy-dom
+    // (requires installing happy-dom as a peer dependency)
+    environment: 'happy-dom',
+    // 支持tsx组件，很关键
+    transformMode: {
+      web: [/.[tj]sx$/],
     },
   },
 });

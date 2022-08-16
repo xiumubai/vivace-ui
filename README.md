@@ -1,11 +1,3 @@
-<!--
- * @Author: 朽木白
- * @Date: 2022-08-15 22:44:06
- * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-16 10:51:19
- * @Description:
--->
-
 # vivace-admin
 
 A Vue.js 3.0 UI Toolkit for Admin
@@ -62,3 +54,5 @@ UnoCSS 是一个拥有高性能且具灵活性的即时原子化 CSS 引擎，�
 - [x] 引用 Markdown 插件方便代码 Demo 示例编写。
 
 本章代码参考：[https://github.com/xiumubai/vivace-admin/tree/feature/docs](https://github.com/xiumubai/vivace-admin/tree/feature/docs)
+
+## 4.搭建 Vitest 单元测试环境
