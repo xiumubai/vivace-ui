@@ -15,6 +15,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "prepare": "husky install"
   },
+  "homepage": "https://vivace-admin.vercel.app/",
   "keywords": [],
   "author": "",
   "license": "ISC",
