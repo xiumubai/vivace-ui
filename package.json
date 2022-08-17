@@ -1,8 +1,7 @@
 {
   "name": "vivace-ui",
-  "version": "0.1.0",
-  "description": "",
-  "type": "module",
+  "version": "0.1.1",
+  "description": "A Vue.js 3.0 UI Toolkit for Admin",
   "files": [
     "dist"
   ],
@@ -78,7 +77,6 @@
   },
   "dependencies": {
     "@iconify-json/ic": "^1.1.9",
-    "plugin-vue^3.0.4": "link:@vitejs/plugin-vue^3.0.4",
     "unocss": "^0.45.6",
     "vue": "^3.2.37"
   }
