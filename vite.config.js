@@ -2,7 +2,7 @@
  * @Author: 朽木白
  * @Date: 2022-08-15 22:58:44
  * @LastEditors: 1547702880@qq.com
- * @LastEditTime: 2022-08-16 21:19:21
+ * @LastEditTime: 2022-08-17 18:45:28
  * @Description:
  */
 
@@ -13,13 +13,14 @@ import vueJsx from '@vitejs/plugin-vue-jsx';
 // import { presetUno, presetAttributify, presetIcons } from 'unocss';
 // import Unocss from 'unocss/vite';
 import Unocss from './config/unocss';
+const { resolve } = require('path');
 // https://vitejs.dev/config/
 
 const rollupOptions = {
   external: ['vue'],
   output: {
     globals: {
-      vue: 'Vue',
+      vue: 'vue',
     },
   },
 };
@@ -42,7 +43,7 @@ export default defineConfig({
     sourcemap: true, // 输出单独 source文件
     brotliSize: true, // 生成压缩大小报告
     lib: {
-      entry: './src/entry.ts',
+      entry: resolve(__dirname, 'src/entry.ts'),
       name: 'VivaceUI',
       fileName: 'vivace-ui',
       // 导出模块格式

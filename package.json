@@ -5,8 +5,8 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/vivace-ui.umd.cjs",
-  "module": "./dist/vivace-ui.js",
+  "main": "./dist/vivace-ui.umd.js",
+  "module": "./dist/vivace-ui.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -39,7 +39,7 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/vivace-ui.js",
+      "import": "./dist/vivace-ui.mjs",
       "require": "./dist/vivace-ui.umd.js"
     }
   },

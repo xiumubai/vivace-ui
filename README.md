@@ -158,4 +158,4 @@ Angular 团队 git 提交规范如下，本文严格按照这个规范提交代�
 - [ ] 自动添加 changelog
 - [ ] 自动打 tag
 - [ ] commitlit 配置
-- [ ] 测试
+- [ ] 改造为 monorepo 模式
