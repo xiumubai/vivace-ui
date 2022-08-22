@@ -46,7 +46,7 @@
   "homepage": "https://vivace-admin.vercel.app/",
   "keywords": [],
   "author": "xiumubai",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
