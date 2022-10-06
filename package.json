@@ -16,9 +16,9 @@
     "test": "vitest",
     "test:run": "vitest run",
     "lint": "eslint --fix --ext .js,.ts,.vue .",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint --config commitlint.config.js -e -V"
   },
   "config": {
     "commitizne": {
