@@ -7,13 +7,13 @@
  */
 
 /// <reference types="vitest" />
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import vueJsx from '@vitejs/plugin-vue-jsx';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 // import { presetUno, presetAttributify, presetIcons } from 'unocss';
 // import Unocss from 'unocss/vite';
-import Unocss from './config/unocss';
-const { resolve } = require('path');
+import Unocss from './config/unocss'
+const { resolve } = require('path')
 // https://vitejs.dev/config/
 
 const rollupOptions = {
@@ -23,7 +23,7 @@ const rollupOptions = {
       vue: 'vue',
     },
   },
-};
+}
 
 export default defineConfig({
   plugins: [
@@ -62,4 +62,4 @@ export default defineConfig({
       web: [/.[tj]sx$/],
     },
   },
-});
+})

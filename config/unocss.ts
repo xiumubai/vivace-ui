@@ -5,8 +5,8 @@
  * @LastEditTime: 2022-08-16 00:20:23
  * @Description:
  */
-import { presetUno, presetAttributify, presetIcons } from 'unocss';
-import Unocss from 'unocss/vite';
+import { presetUno, presetAttributify, presetIcons } from 'unocss'
+import Unocss from 'unocss/vite'
 
 const colors = [
   'white',
@@ -19,7 +19,7 @@ const colors = [
   'indigo',
   'purple',
   'pink',
-];
+]
 const safelist = [
   ...colors.map((v) => `bg-${v}-100`),
   ...colors.map((v) => `bg-${v}-400`),
@@ -47,10 +47,10 @@ const safelist = [
     'add',
     'share',
   ].map((v) => `i-ic-baseline-${v}`),
-];
+]
 
 export default () =>
   Unocss({
     safelist,
     presets: [presetUno(), presetAttributify(), presetIcons()],
-  });
+  })

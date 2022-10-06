@@ -15,9 +15,10 @@
     "docs:serve": "vitepress serve docs",
     "test": "vitest",
     "test:run": "vitest run",
-    "lint": "eslint --fix --ext .ts,.vue src",
+    "lint": "eslint --fix --ext .js,.ts,.vue .",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "config": {
     "commitizne": {
@@ -25,9 +26,9 @@
     }
   },
   "lint-staged": {
-    "*.{js}": [
-      "pretty-quick --staged",
-      "eslint src/ --fix",
+    "**/*.{js,jsx,ts,tsx,vue}": [
+      "prettier --write",
+      "eslint --fix",
       "git add"
     ]
   },
@@ -64,7 +65,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.2.0",
     "happy-dom": "6.0.4",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "terser": "^5.14.2",

@@ -5,9 +5,9 @@
  * @LastEditTime: 2022-08-16 10:32:41
  * @Description:
  */
-import { defineConfig } from 'vite';
-import vueJsx from '@vitejs/plugin-vue-jsx';
-import Unocss from '../config/unocss';
+import { defineConfig } from 'vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import Unocss from '../config/unocss'
 // https://vitejs.dev/config/
 
 export default defineConfig({
@@ -16,4 +16,4 @@ export default defineConfig({
     vueJsx(),
     Unocss(),
   ],
-});
+})
