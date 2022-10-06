@@ -1,7 +1,7 @@
 <br>
 
 <p align="center">
-<img src="https://github.com/smarty-team/smarty-admin/blob/main/assets/logo.jpeg" style="width:200px;" />
+<img src="./docs/public/logo.png" style="width:200px;" />
 </p>
 
 <h1 align="center">Vivace-UI</h1>
