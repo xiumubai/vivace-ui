@@ -18,12 +18,8 @@
     "lint": "eslint --fix --ext .js,.ts,.vue .",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "commitlint": "commitlint --config commitlint.config.js -e -V"
-  },
-  "config": {
-    "commitizne": {
-      "path": "node_modules/cz-customizable"
-    }
+    "commitlint": "commitlint --config commitlint.config.js -e -V",
+    "commit": "cz"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,vue}": [
@@ -32,20 +28,18 @@
       "git add"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "vcm"
-    }
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/vivace-ui.mjs",
-      "require": "./dist/vivace-ui.umd.js"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "homepage": "https://vivace-admin.vercel.app/",
-  "keywords": [],
+  "keywords": [
+    "vivace-ui",
+    "vue3",
+    "vite",
+    "ui"
+  ],
   "author": "xiumubai",
   "license": "MIT",
   "devDependencies": {
@@ -58,6 +52,8 @@
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "2.0.2",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^6.9.1",
     "eslint": "^8.22.0",
     "eslint-formatter-pretty": "^4.1.0",
