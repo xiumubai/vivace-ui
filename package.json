@@ -19,7 +19,8 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
-    "commit": "cz"
+    "commit": "cz",
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,vue}": [
